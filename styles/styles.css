@@ -6,11 +6,82 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color:#F3F1FF;
 }
+header{
+    background-color: blue;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+
+}
 main
 {
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
+}
+.menu{
+    width:870px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav
+{
+   display:flex;
+   align-items: center;  
+}
+.menu-list
+{
+    display: flex;
+}
+.menu-list li{
+    list-style: none;
+    margin-right: 25px;
+}
+.menu-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    
+ }
+ .menu-list li a:hover {
+    color: #e7e2e2fd;
+    font-weight: 400;
+ }
+ 
+ .menu-list li a:hover::after {
+    transform: scaleX(2);
+ 
+ }
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.logo img{
+    height: 50px;
+}
+.logo-text{
+    color:#ffffff;
+    margin-left: 15px;
+    font-size: 24px;
+}
+.profile-img{
+   padding-left: 10px;
+}
+
+ul{
+    list-style-type:none;
+}
+span li a{
+    display: flex;
+}
+
+    
+.logo img{
+    width: 41px;
+    height: 51px;
 }
 .container
 {
@@ -124,7 +195,10 @@ hr
 .course-duration{
     color: #FF4A60;
     border: 2px solid #FF4A60;
-    border-radius: 50%;
+    border-radius: 10px;
+    padding: 3px;
+    background-color:rgb(233, 203, 203)
+    
 }
 /* ------media queries------- */
 /* ------Mobile Devices------ */
@@ -132,6 +206,7 @@ hr
     .container
     {
         width: 100%;
+        
     }
     .courses
     {
@@ -148,11 +223,12 @@ hr
     }
     
 }
-/* tablet devices */
-@media only screen and (min-width:688px) and (max-width:992px) {
+/* tablet devices 
+ @media only screen and (min-width:688px) and (max-width:992px) {
     .container{
         width: 100%;
     }
+}
     .players .courses{
         background-color: yellowgreen;
         grid-template-columns: repeat(2,fr);
@@ -160,6 +236,8 @@ hr
     .blogs{
         grid-template-columns: repeat(1,fr);
     }
-    
-}
+     */
+
+
+ 
     
